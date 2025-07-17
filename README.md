@@ -82,7 +82,7 @@ This is the markdown cheatsheets
 
 This shows the header containing different functionalities including delete, copy, uploading or downloading of files in html or .md
 
-![screenshot](/public/screenshot/image%20testing.png)
+![screenshot](/public/screenshot/full%20screenshot.png)
 Proper testing of the app using both text and images
 
 ![screenshot](/public/screenshot/image%20testing.png)
