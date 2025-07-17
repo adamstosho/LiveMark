@@ -61,6 +61,35 @@ Access a handy Markdown cheatsheet anytime by clicking the help icon in the head
 4. **Auto-Save**: Your work is saved automatically. You can close and reopen the app without losing your progress.
 5. **Mobile Friendly**: The app works well on both desktop and mobile devices.
 
+
+### Preview of the App Interface
+![screenshot](/public/screenshot/screencapture-localhost-3000-2025-07-17-20_52_10.png)
+
+This is the landing page for the app
+
+![screenshot](/public/screenshot/screencapture-localhost-3000-editor-2025-07-17-20_57_01.png)
+
+This is the editor page, showing the default code, which can actually be highlighted and clear or deleted to insert new code
+
+![screenshot](/public/screenshot/screencapture-localhost-3000-editor-2025-07-17-21_06_11.png)
+
+This is the template of the codes used for testing, note that it will also show pics if added
+
+![screenshot](/public/screenshot/screencapture-localhost-3000-editor-2025-07-17-21_06_54.png)
+This is the markdown cheatsheets
+
+![screenshot](/public/screenshot/screencapture-localhost-3000-editor-2025-07-17-21_07_16.png)
+
+This shows the header containing different functionalities including delete, copy, uploading or downloading of files in html or .md
+
+![screenshot](/public/screenshot/image%20testing.png)
+Proper testing of the app using both text and images
+
+![screenshot](/public/screenshot/image%20testing.png)
+
+This is to show the image insertion functionality of the app..
+
+
 ## Tools and Technologies Used
 
 - **React**: For building the user interface
@@ -77,7 +106,7 @@ Access a handy Markdown cheatsheet anytime by clicking the help icon in the head
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/adamstosho/LiveMark.git
    cd your-repo
    ```
 2. **Install dependencies**:

@@ -102,7 +102,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
               </button>
               
               <a
-                href="https://github.com"
+                href="https://github.com/adamstosho/LiveMark"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-white font-semibold rounded-lg transition-all duration-200"
@@ -211,8 +211,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
               <span className="text-xl font-bold">Markdown Previewer</span>
             </div>
             <p className="text-gray-400">
-              Built with React, TypeScript, and Tailwind CSS
-            </p>
+              Built by ART_Redox ©️ 2025</p>
           </div>
         </div>
       </footer>
