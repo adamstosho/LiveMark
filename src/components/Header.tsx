@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, Sun, Moon, Download, Upload, Copy, Trash2, HelpCircle } from 'lucide-react';
+import { Sun, Moon, Download, Upload, Copy, Trash2, HelpCircle } from 'lucide-react';
 
 interface HeaderProps {
   theme: 'light' | 'dark';
@@ -32,8 +32,7 @@ const Header: React.FC<HeaderProps> = ({
             onClick={onBackToLanding}
             className="flex items-center space-x-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
           >
-            <FileText className="w-6 h-6" />
-            <span className="font-semibold text-lg">Markdown Previewer</span>
+            <img src="/logo.jpg" alt="LiveMark Logo" className="h-8 w-auto" />
           </button>
         </div>
         
@@ -47,7 +46,7 @@ const Header: React.FC<HeaderProps> = ({
           </button>
           
           <div className="relative group">
-            <button className="p-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-lg transition-all duration-200">
+            <button type="button" title="Download options" className="p-2 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-lg transition-all duration-200">
               <Download className="w-5 h-5" />
             </button>
             <div className="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-slate-700 rounded-lg shadow-lg border border-gray-200 dark:border-slate-600 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10">

@@ -19,6 +19,7 @@ const CheatsheetModal: React.FC<CheatsheetModalProps> = ({ isOpen, onClose }) =>
           </h2>
           <button
             onClick={onClose}
+            title="Close cheatsheet"
             className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-slate-700 rounded-lg transition-colors"
           >
             <X className="w-6 h-6" />

@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { GripVertical } from 'lucide-react';
 
 interface ResizablePanelProps {
@@ -16,6 +16,15 @@ const ResizablePanel: React.FC<ResizablePanelProps> = ({
 }) => {
   const [leftWidth, setLeftWidth] = useState(defaultLeftWidth);
   const [isDragging, setIsDragging] = useState(false);
+
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (containerRef.current) {
+      containerRef.current.style.setProperty('--left-width', `${leftWidth}%`);
+      containerRef.current.style.setProperty('--right-width', `${100 - leftWidth}%`);
+    }
+  }, [leftWidth]);
 
   const handleMouseDown = useCallback((e: React.MouseEvent) => {
     setIsDragging(true);
@@ -62,10 +71,9 @@ const ResizablePanel: React.FC<ResizablePanelProps> = ({
   }, [isDragging, handleMouseMove, handleMouseUp]);
 
   return (
-    <div id="resizable-container" className="flex h-full">
+    <div id="resizable-container" className="flex h-full" ref={containerRef}>
       <div
-        className="bg-gray-50 dark:bg-slate-700 border-r border-gray-200 dark:border-slate-600"
-        style={{ width: `${leftWidth}%` }}
+        className="resizable-left bg-gray-50 dark:bg-slate-700 border-r border-gray-200 dark:border-slate-600"
       >
         {children[0]}
       </div>
@@ -78,8 +86,7 @@ const ResizablePanel: React.FC<ResizablePanelProps> = ({
       </div>
       
       <div
-        className="bg-white dark:bg-slate-800"
-        style={{ width: `${100 - leftWidth}%` }}
+        className="resizable-right bg-white dark:bg-slate-800"
       >
         {children[1]}
       </div>

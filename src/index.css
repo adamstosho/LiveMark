@@ -156,3 +156,10 @@
 .Editorpage2{
   zoom: 90%;
 } 
+
+.resizable-left {
+  width: var(--left-width, 50%);
+}
+.resizable-right {
+  width: var(--right-width, 50%);
+} 

@@ -50,6 +50,7 @@ const Toast: React.FC<ToastProps> = ({ message, type, isVisible, onClose }) => {
       <span className="font-medium">{message}</span>
       <button
         onClick={onClose}
+        title="Close notification"
         className="ml-4 p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors"
       >
         <X className="w-4 h-4" />
